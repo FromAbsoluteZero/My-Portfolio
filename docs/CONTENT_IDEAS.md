@@ -53,6 +53,7 @@ That site is a blog with a page for each topic. The same shape suits you.
 - Your LinkedIn posts. I cannot read LinkedIn from this environment, and post pages need a login. Paste the text of the posts you want covered, or upload the file from LinkedIn's data export.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
+- **The term paper and the startup.** For the SOS system paper: the school and year, your part in it, whether a prototype was built and tested, and any results. The entry describes the design only. For the startup you worked for in India: its exact name, what it did, your role and dates, what you built and any results. None of that is on the site yet.
 - The start and expected end dates of your MBA, which are blank in the CV, if you want them shown.
 - **Numbers for the cloud kitchen project**, only what you can share: the change in long-distance orders, the order lift in the test group, how many kitchens opened, and the size and length of the A/B test. The case study has none yet. A redacted My Maps screenshot would let me replace the schematic with the real map.
 - **The Grocery Outlet operator performance project.** You described it as comparing each independent operator's store with others in its area and across the city, using demographics, order counts and throwaways, and scoring it on five pillars. I am holding it until you find the deck. Send the five pillars, the measures behind each and any result.
