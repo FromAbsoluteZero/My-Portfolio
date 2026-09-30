@@ -48,16 +48,16 @@ That site is a blog with a page for each topic. The same shape suits you.
 ## I need from you
 
 - **Your JDIQ paper.** It is on the site as a general description, written from your working-state file. It leaves out the manuscript title, the manuscript number and the review history, and it reports no results because none exist. The entry is wrapped in a HOLD comment in `index.html`. Decide whether a page in your name should describe the manuscript while it is under review. Add the title and a link after acceptance or a preprint. Tell me if the paper grew out of your Southern California Edison validation work, and I will connect the two.
-- **Summaries of your two articles.** They are linked in the Writing section by title only. I could not open Medium or Towards AI. Paste the text or the main points and I will add a line under each. Check the titles too, because I rebuilt them from the addresses.
+- **Summaries of your two articles.** I have their titles and links only, because I could not open Medium or Towards AI, and I do not have their text. If the Medium article is the long version of one of your LinkedIn posts, tell me which and I will connect them. Otherwise paste the text or export each page as a PDF.
 - Your email address, if you want it public. LinkedIn and Medium are already linked.
 - Any further LinkedIn posts you want covered. Three posts are in the Writing section and one, on volunteering with Young Professionals in Energy LA, is in About. The volunteering post came without a link.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
-- **Your part in Taksy Kraft.** The case study describes the company's two products from its pitch deck, in the third person. The deck's team slide names three founders and does not list you, so tell me your title and what you did, and I will add a first-person line. Also send the dates.
-- **Term paper.** For the SOS system paper, send the school and year, your part, whether a prototype was built and tested, and any results. The entry describes the design only.
+- **Taksy Kraft dates.** Your title is on the site as business strategist, on the founding team. The start and end dates are still missing. Add anything you did there that you can share, and I will add a line.
+- **SOS system results.** The entry says a prototype was built. Send anything you can say about how it was tested and what happened, and I will add it. Also send the school and year.
 - The start and expected end dates of your MBA, which are blank in the CV, if you want them shown.
 - **Numbers for the cloud kitchen project**, only what you can share: the change in long-distance orders, the order lift in the test group, how many kitchens opened, and the size and length of the A/B test. The case study has none yet. A redacted My Maps screenshot would let me replace the schematic with the real map.
-- **Grocery Outlet results and dates.** The scorecard case study is written from your final internship deck. It has no results, because the deck has none. Send any outcome you can share, such as what was adopted. Your CV says the internship began in July 2022 and the deck says June 21, 2022, so tell me which is right.
+- **Grocery Outlet results.** The scorecard case study is written from your final internship deck. It has no results, because the deck has none. Send any outcome you can share, such as what was adopted. The internship now starts in June 2022, as the deck says.
 - Your real future plans, to replace the two suggested ones.
 - Interests outside work.
 - Any projects that live outside the book's repository.
