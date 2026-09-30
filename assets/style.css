@@ -247,15 +247,19 @@ h1 { font-size: clamp(2.6rem, 7.5vw, 4.8rem); font-weight: 650; letter-spacing: 
 .writing { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
 .writing li { padding: 18px 0; border-top: 1px solid var(--rule); display: grid; gap: 4px; }
 .writing li:first-child { border-top: 0; padding-top: 0; }
-.writing h3 { font-size: 1.15rem; line-height: 1.35; }
-.writing h3 a { color: var(--ink); text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; }
-.writing h3 a:hover { text-decoration-color: var(--accent); }
+.writing h4 { font-size: 1.12rem; line-height: 1.35; }
+.writing h4 a, .summary-link a { color: var(--ink); text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; }
+.writing h4 a:hover, .summary-link a:hover { text-decoration-color: var(--accent); }
 .writing p:not(.meta) { margin: 0; color: var(--muted); }
 .links { margin: 8px 0 0; font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.04em; }
 .links a::after { content: " \2192"; }
-.paper { margin-top: 32px; max-width: 46rem; border: 1px dashed var(--rule); border-radius: var(--radius); padding: 18px 20px; display: grid; gap: 6px; }
-.paper h3 { font-size: 1.15rem; }
-.paper p:last-child { margin: 0; color: var(--muted); }
+.paper { max-width: 46rem; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 10px; }
+.paper h3 { font-size: 1.22rem; line-height: 1.3; }
+.paper p { margin: 0; }
+.paper p:not(.meta):not(.summary-link) { color: var(--muted); }
+.summary-link { margin-top: 4px !important; padding-top: 12px; border-top: 1px solid var(--rule); }
+.summary-link .meta { display: block; margin-bottom: 2px; }
+#writing .subhead { margin-top: 36px; }
 
 /* ---------- book ---------- */
 .book-sub { color: var(--muted); font-style: italic; margin: 0 0 16px; }
@@ -311,7 +315,12 @@ h1 { font-size: clamp(2.6rem, 7.5vw, 4.8rem); font-weight: 650; letter-spacing: 
 @media (max-width: 560px) { .skills div { grid-template-columns: minmax(0, 1fr); } }
 
 /* ---------- contact + footer ---------- */
-.contact-lead { font-size: 1.2rem; }
+.contact-lead { font-size: 1.2rem; max-width: var(--measure); }
+.email-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 24px; }
+.email { font-size: clamp(1.2rem, 4vw, 1.6rem); font-weight: 600; color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+.copy-btn { min-height: 44px; min-width: 44px; padding: 0 14px; font: 500 0.74rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; background: none; color: var(--muted); border: 1px solid var(--rule); border-radius: 3px; cursor: pointer; }
+.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+.copy-status { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
 .contact .actions { margin-bottom: 0; }
 .site-footer { border-top: 1px solid var(--rule); background: var(--surface); padding-block: 32px calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--muted); }
 .foot { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; }
@@ -323,12 +332,12 @@ h1 { font-size: clamp(2.6rem, 7.5vw, 4.8rem); font-weight: 650; letter-spacing: 
 
 /* ---------- motion ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .ch, .btn, .nav a, .card { transition: background-color 0.15s, border-color 0.15s, color 0.15s; }
+  .ch, .btn, .copy-btn, .nav a, .card { transition: background-color 0.15s, border-color 0.15s, color 0.15s; }
 }
 
 /* ---------- print ---------- */
 @media print {
-  .site-header, .skip, .sky, .featured, .map, .actions, .scheme { display: none !important; }
+  .site-header, .skip, .sky, .featured, .map, .actions, .scheme, .copy-btn, .copy-status { display: none !important; }
   body, .showcase { background: #fff !important; color: #000 !important; }
   .showcase { padding: 0 0 16px; }
   .showcase::after { display: none; }

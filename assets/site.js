@@ -1,4 +1,4 @@
-/* Theme switch, hero artwork, chapter map and nav highlight. The page reads correctly without any of it. */
+/* Theme switch, hero artwork, chapter map, email copy and nav highlight. The page reads correctly without any of it. */
 (function () {
   "use strict";
   var root = document.documentElement;
@@ -119,6 +119,29 @@
       else if (e.key === "Home") j = 0; else if (e.key === "End") j = buttons.length - 1; else return;
       e.preventDefault();
       select(buttons[Math.max(0, Math.min(buttons.length - 1, j))], true);
+    });
+  }
+
+  // ---- copy the email address ------------------------------------------------
+  var copyBtn = document.querySelector(".copy-btn"), copyStatus = document.querySelector(".copy-status"), copyTimer;
+  function copyFallback(text) {
+    var ta = document.createElement("textarea"), ok = false;
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); copyBtn.focus();
+    return ok;
+  }
+  if (copyBtn && copyStatus) {
+    copyBtn.hidden = false;
+    copyBtn.addEventListener("click", function () {
+      var text = copyBtn.dataset.copy;
+      var done = function (ok) {
+        copyStatus.textContent = ok ? "Copied" : "Copy failed. Select the address instead.";
+        clearTimeout(copyTimer); copyTimer = setTimeout(function () { copyStatus.textContent = ""; }, 4000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(copyFallback(text)); });
+      else done(copyFallback(text));
     });
   }
 
