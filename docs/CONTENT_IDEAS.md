@@ -15,7 +15,7 @@ The section at the end says how to bring the conversations in.
 | About, Work | Your CV, and `docs/AUTHOR_BIO.md` in the book repository |
 | Book facts | `docs/BOOK_METADATA.md`, `README.md` |
 | Chapter map | `docs/CHAPTER_MAP.md`, cross-checked against `notebooks/` |
-| Portfolio and mini projects | `bridges/README.md`, `practice/README.md`, and six files under `code/`, `scripts/`, `practice/` and `tests/` |
+| Portfolio | Your CV, your GaP-Solution repository for the Southern California Edison pipeline, your final internship deck and the Taksy Kraft pitch deck |
 | Interests | The chapters and roles above |
 
 ## Add next, from the repository
@@ -47,6 +47,8 @@ That site is a blog with a page for each topic. The same shape suits you.
 
 ## I need from you
 
+- **The test count for the Southern California Edison pipeline.** Your CV says a 28-test suite. The GaP-Solution README says 354 tests. The site uses 354, from the repository, and no longer shows 28. Tell me if 28 belongs to a different suite, such as the Azure-native rebuild, and I will show both correctly.
+- **Future projects.** The section now holds one suggested idea. Send your real plans and I will replace it.
 - **Your JDIQ paper.** It is on the site as a general description, written from your working-state file. It leaves out the manuscript title, the manuscript number and the review history, and it reports no results because none exist. The entry is wrapped in a HOLD comment in `index.html`. Decide whether a page in your name should describe the manuscript while it is under review. Add the title and a link after acceptance or a preprint. Tell me if the paper grew out of your Southern California Edison validation work, and I will connect the two.
 - **Summaries of your two articles.** I have their titles and links only, because I could not open Medium or Towards AI, and I do not have their text. If the Medium article is the long version of one of your LinkedIn posts, tell me which and I will connect them. Otherwise paste the text or export each page as a PDF.
 - Your email address, if you want it public. LinkedIn and Medium are already linked.
