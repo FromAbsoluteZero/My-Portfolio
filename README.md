@@ -13,8 +13,8 @@ A single-page portfolio in plain HTML, CSS and a little JavaScript. There is no 
 | `assets/img/` | Two figures from *From Absolute Zero*. |
 | `assets/og-card.png` | The 1200 × 630 image shown when the site is shared on LinkedIn and elsewhere. |
 | `assets/favicon.svg`, `assets/apple-touch-icon.png` | Browser and home-screen icons. |
-| `assets/Shanmukh-Behara-Resume-Utilities.pdf`, `assets/Shanmukh-Behara-Resume-Risk-Strategy.pdf` | Two one-page résumés, for utility data governance roles and for risk and strategy roles. The hero links the first; Contact links both. They are text-based, so applicant tracking systems can read them. |
-| `resume/utilities.html`, `resume/risk-strategy.html`, `resume/resume.css` | The sources of those PDFs, sharing one stylesheet. |
+| `assets/Shanmukh-Behara-Resume.pdf` | The one-page résumé linked from the hero and Contact. It is text-based, so applicant tracking systems can read it. |
+| `resume/resume.html`, `resume/resume.css` | The source of that PDF and its stylesheet. |
 
 ## Run it locally
 
@@ -37,7 +37,7 @@ Then open <http://localhost:8000>. Opening `index.html` straight from disk also 
 - **Chapter map.** Each square is a `<button>` whose `data-` attributes hold the chapter's title, code blocks, figures and interview-bank count, with a `data-kind` of `nb`, `code` or `none`. The ordered list below it holds the same titles as text.
 - **Selected work cards.** Each card is a `<li class="card">` with two colours in its `style` attribute, `--c1` and `--c2`, and a link to a case study `id`.
 - **Share image.** If the hero line changes, regenerate `assets/og-card.png` to match.
-- **Résumés.** Edit `resume/utilities.html` or `resume/risk-strategy.html`, serve the folder over http, open the page in Chrome and print it to PDF on Letter paper with margins set to Default and background graphics on. Save it over the matching PDF in `assets/`, and keep each to one page.
+- **Résumé.** Edit `resume/resume.html`, serve the folder over http, open `/resume/resume.html` in Chrome and print it to PDF on Letter paper with margins set to Default and background graphics on. Save it over `assets/Shanmukh-Behara-Resume.pdf`, and keep it to one page.
 
 ## Checks run before publishing
 
