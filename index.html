@@ -36,7 +36,7 @@
       "worksFor": { "@type": "Organization", "name": "Southern California Edison" },
       "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "California State University" },
-      "knowsAbout": ["Data governance", "Data quality", "Data validation", "Metadata management", "Business analytics", "Supply chain analytics", "Utilities", "Fraud and risk analytics", "Forecasting", "A/B testing", "Python", "SQL", "Power BI"],
+      "knowsAbout": ["Data governance", "Data quality", "Data validation", "Metadata management", "Business analytics", "Supply chain analytics", "Utilities", "Wildfire compliance data", "Fraud and risk analytics", "Forecasting", "A/B testing", "Python", "SQL", "Power BI"],
       "sameAs": ["https://www.linkedin.com/in/shanmukhbehara/", "https://github.com/FromAbsoluteZero", "https://medium.com/@sbehara2"]
     },
     {
@@ -87,7 +87,7 @@
       <p class="lede">I build the checks and the analysis that let a business trust its numbers before it acts on them. For 8+ years that has meant utility data and $1B+ in power contracts at Southern California Edison, inventory at Grocery Outlet, supply, demand and fraud at Swiggy, and risk at Uber.</p>
       <p class="actions">
         <a class="btn primary" href="#projects">See my work</a>
-        <a class="btn" href="assets/Shanmukh-Behara-Resume.pdf" type="application/pdf">Résumé (PDF)</a>
+        <a class="btn" href="assets/Shanmukh-Behara-Resume-Utilities.pdf" type="application/pdf">Résumé (PDF)</a>
         <a class="btn" href="#contact">Get in touch</a>
       </p>
       <dl class="now">
@@ -137,7 +137,10 @@
           <p class="role"><strong>Data Governance Advisor</strong> · Jan&nbsp;2024 – present</p>
           <ul>
             <li>Implemented 22 validation checks across SAP, Azure and Power BI, cutting monthly data defects by 42.9%.</li>
+            <li>Led the High Fire Risk Area (HFRA) designation data integrity program: resolved discrepancies between SAP and GIS records for transmission and distribution assets, and ran monthly remediation of 85+ functional locations and structures, tracking notification impacts against 6-, 12- and 36-month remediation timeframes.</li>
+            <li>Selected for SCE's Incident Management Team for Public Safety Power Shutoff (PSPS) events, supporting PSPS data workflows during activations.</li>
             <li>Designed and built a Python pipeline that retired a legacy orchestration layer for 4,000+ action requests a month, then rebuilt it as an Azure-native service with managed secrets, a 28-test suite and CI/CD after a formal architecture review. <a class="more" href="#sce-case">Case study</a></li>
+            <li>Delivered a Palantir Foundry integration that syncs ITSM incident data from SAP HANA to SQL Server.</li>
             <li>Standardized workflow reporting for those requests, lifting SLA adherence from 78% to 89% and cutting the backlog by 31%.</li>
             <li>Built a Power BI dashboard on automation health that improved triage time by 32%, and automated follow-ups on 60,000+ line items a month, cutting manual follow-ups by 35%.</li>
             <li>Contribute metadata and business-glossary definitions so that a shared term has one agreed meaning.</li>
@@ -300,7 +303,8 @@
         <p class="meta">Working paper · Being prepared for ACM Journal of Data and Information Quality</p>
         <h3>A seeded-defect benchmark for stage-aware data validation</h3>
         <p>Most validation suites grow one incident at a time, so nobody can say what kind of check each one is or where it should run. The paper sorts checks into eight types and gives each a home at one of four pipeline stages: source extraction, in-flight transformation, staging and load, and BI consumption.</p>
-        <p>It tests two narrow roles for a language model: proposing candidate checks from schemas and data dictionaries, and classifying existing checks with a confidence score, as a first draft that a person reviews. Rule-based and model-assisted checks are scored by running them against defects seeded into the data. The study is pre-registered, and no results are reported yet.</p>
+        <p>It tests two narrow roles for a language model: proposing candidate checks from schemas and data dictionaries, and classifying existing checks with a confidence score, as a first draft that a person reviews.</p>
+        <p>On a purpose-built benchmark of 180 seeded defects across 18 mechanisms, optimized check placement detected 81.7% of defects, against 69.4% for staging-only validation, and cut mean defect propagation from 1.40 to 0.60 pipeline stages.</p>
         <p class="summary-link"><span class="meta">Practitioner summary · Towards AI · Jul&nbsp;2026</span><a href="https://pub.towardsai.net/your-data-validation-suite-is-a-mess-09540379cf63">Your Data Validation Suite Is a Mess</a>, an audit for an inherited suite and where a language model helps.</p>
       </div>
       <h3 class="subhead">Articles and posts</h3>
@@ -471,13 +475,13 @@
   <div class="wrap">
     <div class="section-head"><p class="label">About</p><h2 id="about-h">About me</h2></div>
     <div class="body">
-      <p>My work has one thread: deciding whether something can be trusted before anyone acts on it. At Uber and Swiggy that meant transactions, with fraud views, risk models and a refund check, and supply, with demand forecasts and the cloud kitchen pilot. At Grocery Outlet it meant inventory and store performance. At Southern California Edison it means utility data, with validation checks, business-glossary definitions and pipelines that are safe to rerun. Now I am studying whether language models can write and place those checks.</p>
+      <p>My work has one thread: deciding whether something can be trusted before anyone acts on it. At Uber and Swiggy that meant transactions, with fraud views, risk models and a refund check, and supply, with demand forecasts and the cloud kitchen pilot. At Grocery Outlet it meant inventory and store performance. At Southern California Edison it means utility data, from wildfire compliance designations to validation checks, business-glossary definitions and pipelines that are safe to rerun. Now I am studying whether language models can write and place those checks.</p>
       <p>Along the way I led ten associates across twelve cities at Swiggy, trained more than 15 analysts at Southern California Edison, and wrote a book that teaches machine learning from a first line of Python.</p>
       <div class="about-grid">
         <div>
           <h3 class="block-title">Now</h3>
           <ul class="plain">
-            <li>Completing a Professional MBA, Information Technology track, at Campbellsville University</li>
+            <li>Completing a Professional MBA, Information Technology track, at Campbellsville University, expected 2027</li>
             <li>Preparing a paper on stage-aware data validation for ACM JDIQ</li>
             <li>Volunteering with Young Professionals in Energy (YPE) Los Angeles</li>
           </ul>
@@ -485,17 +489,18 @@
         <div>
           <h3 class="block-title">Education and credentials</h3>
           <ul class="edu">
-            <li><strong>Professional MBA, Information Technology Track</strong><span>Campbellsville University, in progress</span></li>
+            <li><strong>Professional MBA, Information Technology Track</strong><span>Campbellsville University, expected 2027</span></li>
             <li><strong>MS, Business Analytics and Operations Research</strong><span>California State University, 2021 – 2022. GPA 3.8, Dean's List.</span></li>
             <li><strong>Lean Six Sigma Black Belt</strong><span>CSSBB, 2020</span></li>
+            <li><strong>Incident management</strong><span>FEMA IS-700 (NIMS), IS-800 (National Response Framework), ICS-100 and ICS-200; Cal OES SEMS G606</span></li>
           </ul>
         </div>
       </div>
       <h3 class="block-title">Skills</h3>
       <dl class="skills">
-        <div><dt>Domains</dt><dd>Utilities and power contracts, retail inventory and supply chain, food delivery, ride-hailing</dd></div>
+        <div><dt>Domains</dt><dd>Utilities, wildfire compliance data and power contracts, retail inventory and supply chain, food delivery, ride-hailing</dd></div>
         <div><dt>Languages</dt><dd>Python, R, SQL</dd></div>
-        <div><dt>Data and cloud</dt><dd>Azure, SAP, AWS (Redshift, Lambda, S3), SQL Server, PostgreSQL, Spark</dd></div>
+        <div><dt>Data and cloud</dt><dd>Palantir Foundry, Azure, SAP and SAP HANA, AWS (Redshift, Lambda, S3), SQL Server, PostgreSQL, Spark</dd></div>
         <div><dt>BI and reporting</dt><dd>Power BI, Tableau, SAS, MicroStrategy, Excel</dd></div>
         <div><dt>Governance</dt><dd>Metadata management, business glossary, KPI definitions, data validation, data lifecycle, Erwin DT</dd></div>
         <div><dt>Methods</dt><dd>A/B testing, forecasting, regression, clustering, root cause analysis</dd></div>
@@ -513,7 +518,8 @@
       <p class="email-line"><a class="email" href="mailto:shanmukh.b@outlook.com">shanmukh.b@outlook.com</a><button type="button" class="copy-btn" data-copy="shanmukh.b@outlook.com" aria-label="Copy email address" hidden>Copy</button><span class="copy-status" role="status"></span></p>
       <p class="actions">
         <a class="btn primary" href="mailto:shanmukh.b@outlook.com">Email me</a>
-        <a class="btn" href="assets/Shanmukh-Behara-Resume.pdf" type="application/pdf">Résumé (PDF)</a>
+        <a class="btn" href="assets/Shanmukh-Behara-Resume-Utilities.pdf" type="application/pdf">Utilities résumé (PDF)</a>
+        <a class="btn" href="assets/Shanmukh-Behara-Resume-Risk-Strategy.pdf" type="application/pdf">Risk and strategy résumé (PDF)</a>
         <a class="btn" href="https://www.linkedin.com/in/shanmukhbehara/">LinkedIn</a>
         <a class="btn" href="https://github.com/FromAbsoluteZero">GitHub</a>
       </p>
