@@ -21,7 +21,7 @@ The section at the end says how to bring the conversations in.
 ## Add next, from the repository
 
 1. **Three original projects.** Your own Appendix B says a portfolio built on the book's datasets reads as a finished tutorial. It recommends an analysis, a model evaluated honestly, and something in production, on data nobody else has picked. `reference/portfolio/project-ideas.md` has fifteen framings. This is the biggest gap on the site.
-2. **Case studies from Southern California Edison.** The pipeline rebuilt as an Azure-native service, the twenty-two validation checks, and the glossary work are each a short write-up. Use `reference/templates/README_TEMPLATE.md`: the finding first, then the decision it informs. Check with your employer before publishing anything beyond the public bio.
+2. **More Southern California Edison case studies.** The pipeline replacement is now on the site. The twenty-two validation checks and the glossary work each deserve their own short write-up. Use `reference/templates/README_TEMPLATE.md`: the finding first, then the decision it informs. Check with your employer before publishing anything beyond what your CV already says.
 3. **Uber and Swiggy stories.** One page each on the fraud views and the demand forecasts, with only the numbers you are free to share.
 4. **A page for the book.** The table of contents, a sample chapter, the cover with its credit, the errata history, and a reading path by audience from `docs/HOW_TO_USE.md`. Add reviews once you have them.
 5. **Notes.** Short posts, each built on something the repository already proves:
@@ -47,6 +47,7 @@ That site is a blog with a page for each topic. The same shape suits you.
 
 ## I need from you
 
+- **Your JDIQ paper.** The title, co-authors, year, volume and issue, a DOI or link, whether it is published or accepted, and two or three sentences on what it found. I could not find it online, so nothing about it is on the site yet.
 - Email address and LinkedIn URL, for the contact section.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.

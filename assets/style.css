@@ -219,6 +219,11 @@ h3 { font-size: 1.28rem; }
 .project.feature { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(20px, 3vw, 32px); margin-bottom: 8px; }
 .project .finding { font-size: 1.12rem; line-height: 1.5; margin: 0; max-width: 40rem; }
 .project .detail { margin: 0; color: var(--muted); max-width: 40rem; }
+.results { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; gap: 10px; max-width: 40rem; }
+.results li { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 4px 16px; align-items: baseline; padding-top: 10px; border-top: 1px solid var(--rule); }
+.results strong { font-size: 1.3rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.results span { color: var(--ink); }
+.project + .project.feature, .project.feature + .project.feature { margin-top: 8px; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 4px 0 0; padding: 0; }
 .tag { padding: 3px 8px; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); letter-spacing: 0.06em; }
 .links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 4px 0 0; font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.04em; }
