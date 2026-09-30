@@ -37,7 +37,7 @@ Then open <http://localhost:8000>. Opening `index.html` straight from disk also 
 - **Chapter map.** Each square is a `<button>` whose `data-` attributes hold the chapter's title, code blocks, figures and interview-bank count, with a `data-kind` of `nb`, `code` or `none`. The ordered list below it holds the same titles as text.
 - **Selected work cards.** Each card is a `<li class="card">` with two colours in its `style` attribute, `--c1` and `--c2`, and a link to a case study `id`.
 - **Share image.** If the hero line changes, regenerate `assets/og-card.png` to match.
-- **Résumé.** Edit `resume/resume.html`, serve the folder over http, open `/resume/resume.html` in Chrome and print it to PDF on Letter paper with margins set to Default and background graphics on. Save it over `assets/Shanmukh-Behara-Resume.pdf`, and keep it to two pages.
+- **Résumé.** Edit `resume/resume.html`, serve the folder over http, open `/resume/resume.html` in Chrome and print it to PDF on Letter paper with margins set to Default and background graphics on. Save it over `assets/Shanmukh-Behara-Resume.pdf`, and keep it to one page.
 
 ## Checks run before publishing
 
