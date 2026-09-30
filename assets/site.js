@@ -7,10 +7,13 @@
 
   // ---- theme: auto (follow the device), light or dark -----------------------
   var schemeButtons = document.querySelectorAll(".scheme button");
-  function applyScheme(s, save) {
-    if (s === "light" || s === "dark") root.setAttribute("data-theme", s); else root.removeAttribute("data-theme");
+  // `user` is true only for a click. On load, "auto" leaves the attribute alone so a theme set by the
+  // page around this one is not overwritten.
+  function applyScheme(s, user) {
+    if (s === "light" || s === "dark") root.setAttribute("data-theme", s);
+    else if (user) root.removeAttribute("data-theme");
     schemeButtons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.scheme === s ? "true" : "false"); });
-    if (!save) return;
+    if (!user) return;
     try { if (s === "auto") localStorage.removeItem("theme"); else localStorage.setItem("theme", s); } catch (e) {}
   }
   var saved = "auto";
