@@ -47,11 +47,10 @@ That site is a blog with a page for each topic. The same shape suits you.
 
 ## I need from you
 
-- **Your JDIQ paper.** It is in a Claude document I could not open. Send its link, or paste the title, co-authors, year, DOI or link, status, and two or three sentences on what it found. Nothing about it is on the site yet.
+- **Your JDIQ paper.** It is on the site as a general description, written from your working-state file. It leaves out the manuscript title, the manuscript number and the review history, and it reports no results because none exist. The entry is wrapped in a HOLD comment in `index.html`. Decide whether a page in your name should describe the manuscript while it is under review. Add the title and a link after acceptance or a preprint. Tell me if the paper grew out of your Southern California Edison validation work, and I will connect the two.
 - **Summaries of your two articles.** They are linked in the Writing section by title only. I could not open Medium or Towards AI. Paste the text or the main points and I will add a line under each. Check the titles too, because I rebuilt them from the addresses.
 - Your email address, if you want it public. LinkedIn and Medium are already linked.
 - Any further LinkedIn posts you want covered. Three posts are in the Writing section and one, on volunteering with Young Professionals in Energy LA, is in About. The volunteering post came without a link.
-- Details of the Lean Six Sigma Black Belt, such as who awarded it and when. It comes from your LinkedIn headline and is not in your CV.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
 - **Your part in Taksy Kraft.** The case study describes the company's two products from its pitch deck, in the third person. The deck's team slide names three founders and does not list you, so tell me your title and what you did, and I will add a first-person line. Also send the dates.

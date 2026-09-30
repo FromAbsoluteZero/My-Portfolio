@@ -94,7 +94,7 @@
       </li>
       <li class="card" style="--c1:#6B3F7A;--c2:#B98AC7">
         <svg class="art" viewBox="0 0 320 110" aria-hidden="true" focusable="false"><path class="s" d="M84 34H262M84 56H232M84 78H248"/><circle class="o" cx="58" cy="34" r="5"/><circle class="f" cx="58" cy="56" r="4"/><circle class="f" cx="58" cy="78" r="4"/></svg>
-        <div class="card-body"><h3><a href="#writing">Writing</a></h3><p>Articles and posts on fraud, credit risk and data validation.</p><span class="go" aria-hidden="true">Read</span></div>
+        <div class="card-body"><h3><a href="#writing">Writing</a></h3><p>Research in progress, plus articles and posts on fraud, credit risk and data validation.</p><span class="go" aria-hidden="true">Read</span></div>
       </li>
       <li class="card" style="--c1:#C1662F;--c2:#E9A06A">
         <svg class="art" viewBox="0 0 320 110" aria-hidden="true" focusable="false"><path class="s" d="M112 34L72 55L112 76M208 34L248 55L208 76"/><path class="s" d="M178 26L146 84"/></svg>
@@ -121,7 +121,7 @@
       <h3 class="block-title">Education and credentials</h3>
       <ul class="edu">
         <li><strong>Professional MBA, Information Technology Track</strong><span>Campbellsville University, in progress</span></li>
-        <li><strong>Lean Six Sigma Black Belt</strong><span>Certification</span></li>
+        <li><strong>Lean Six Sigma Black Belt</strong><span>CSSBB, 2020</span></li>
         <li><strong>MS, Business Analytics and Operations Research</strong><span>California State University, 2021 to 2022. GPA 3.8. Dean's List, Spring 2022.</span></li>
       </ul>
       <h3 class="block-title">Community</h3>
@@ -430,9 +430,18 @@
 
 <section class="section" id="writing" aria-labelledby="writing-h">
   <div class="wrap">
-    <div class="section-head"><p class="label">Writing</p><h2 id="writing-h">Articles and posts</h2></div>
+    <div class="section-head"><p class="label">Writing</p><h2 id="writing-h">Research, articles and posts</h2></div>
     <div class="body">
       <!-- TODO: add a one-line summary under each article once you have the text. The article titles were rebuilt from their addresses, so check their wording. -->
+      <!-- HOLD: this entry describes a manuscript that is in preparation for journal review. It leaves out the title, the manuscript number and any review history on purpose. Delete the whole article if you want to keep your name and this topic apart while the manuscript is under review. -->
+      <article class="project feature" id="research">
+        <p class="meta">Research · In preparation for ACM Journal of Data and Information Quality</p>
+        <h3>Stage-aware data validation, tested against seeded defects</h3>
+        <p class="finding">The paper asks whether rule-based and language-model methods can generate data validation checks and place each one at the right stage of a pipeline, scored by running the checks against defects seeded into the data on purpose.</p>
+        <p class="detail">It is pre-registered. The hypotheses, the comparison against a profiler baseline and the analysis plan are fixed before any scored run, and every departure from the plan goes into a dated amendment log. Open-weight models run locally and Claude models run through a headless client, all under one harness that is written in standard-library Python with automated tests.</p>
+        <p class="detail">The design separates four questions. Can a method extract the rules from documentation? Can it classify a check and choose its stage? Does its confidence tell you when to route a case to a person? Does placing a check at the right stage catch more defects? No scored run has happened yet, so no results are reported here.</p>
+        <ul class="tags"><li class="tag">Data quality</li><li class="tag">LLM evaluation</li><li class="tag">Benchmark design</li><li class="tag">Pre-registration</li></ul>
+      </article>
       <article class="project">
         <p class="meta">Medium</p>
         <h3><a href="https://medium.com/@sbehara2/delivering-trust-how-food-aggregators-uses-advanced-data-analysis-techniques-to-combat-fraud-7bf19d8207df">Delivering Trust: How Food Aggregators Uses Advanced Data Analysis Techniques to Combat Fraud</a></h3>

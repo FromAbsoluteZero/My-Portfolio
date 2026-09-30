@@ -50,6 +50,7 @@ Search `index.html` for `TODO` and `DRAFT`.
 
 - **Contact.** LinkedIn, Medium and GitHub are linked. Your email is commented out and your phone number is not on the page, on purpose.
 - **Employer review.** The Experience section repeats the results from your CV, such as percentages and dollar savings. Check them against your employer's policy before you publish. Internal project names and architecture-review findings were left out.
+- **Research entry.** The JDIQ paper is described in general terms, inside a HOLD comment. It has no title, manuscript number or results on purpose. Remove it if you want to keep your name and the topic apart during review.
 - **Future projects.** The first item is documented in the book's repository. The other two are suggestions. Replace them with your real plans.
 - **Cover.** The book's cover image is not on the page. If you add it, keep the credit the artwork requires: NASA, ESA, CSA, STScI, A. Pagan (STScI), CC BY 4.0.
 
