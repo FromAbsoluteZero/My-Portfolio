@@ -50,11 +50,8 @@ That site is a blog with a page for each topic. The same shape suits you.
 - **Your JDIQ paper.** It is in a Claude document I could not open. Send its link, or paste the title, co-authors, year, DOI or link, status, and two or three sentences on what it found. Nothing about it is on the site yet.
 - **Summaries of your two articles.** They are linked in the Writing section by title only. I could not open Medium or Towards AI. Paste the text or the main points and I will add a line under each. Check the titles too, because I rebuilt them from the addresses.
 - Your email address, if you want it public. LinkedIn and Medium are already linked.
-- Your LinkedIn posts. I cannot open LinkedIn from this environment. You shared four short links, listed below. Paste the text of each post, or the main points, and I will add them to the Writing section with their full links.
-  - https://lnkd.in/p/gVW3ZP5m
-  - https://lnkd.in/p/gbrEaVsU
-  - https://lnkd.in/p/gER2HFTz
-  - https://lnkd.in/p/gXXUKx33
+- Any further LinkedIn posts you want covered. Three posts are in the Writing section and one, on volunteering with Young Professionals in Energy LA, is in About. The volunteering post came without a link.
+- Details of the Lean Six Sigma Black Belt, such as who awarded it and when. It comes from your LinkedIn headline and is not in your CV.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
 - **The term paper and the startup.** For the SOS system paper: the school and year, your part in it, whether a prototype was built and tested, and any results. The entry describes the design only. For the startup you worked for in India: its exact name, what it did, your role and dates, what you built and any results. None of that is on the site yet.

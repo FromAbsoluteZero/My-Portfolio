@@ -221,6 +221,12 @@ h3 { font-size: 1.28rem; }
 .project .detail { margin: 0; color: var(--muted); max-width: 40rem; }
 .project h3 a { color: var(--ink); text-decoration-color: var(--rule); text-decoration-thickness: 1.5px; }
 .project h3 a:hover { text-decoration-color: var(--accent); }
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; max-width: 40rem; margin: 6px 0 2px; }
+.compare > div { border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; background: var(--surface); }
+.compare h4 { margin: 0 0 8px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 500; color: var(--muted); }
+.compare ul { margin: 0 0 10px; padding-left: 1.1em; }
+.compare li { margin-bottom: 2px; }
+.compare p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
 .results { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; gap: 10px; max-width: 40rem; }
 .results li { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 4px 16px; align-items: baseline; padding-top: 10px; border-top: 1px solid var(--rule); }
 .results strong { font-size: 1.3rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.2; }
