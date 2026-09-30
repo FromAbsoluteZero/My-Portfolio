@@ -214,7 +214,7 @@ h3 { font-size: 1.28rem; }
 .timeline h4 { margin: 14px 0 6px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 500; color: var(--muted); }
 
 /* projects */
-.project { padding: 26px 0; border-top: 1px solid var(--rule); display: grid; gap: 10px; }
+.project { padding: 26px 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
 .project:first-child { border-top: 0; padding-top: 0; }
 .project.feature { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(20px, 3vw, 32px); margin-bottom: 8px; }
 .project .finding { font-size: 1.12rem; line-height: 1.5; margin: 0; max-width: 40rem; }
@@ -227,6 +227,11 @@ h3 { font-size: 1.28rem; }
 .compare ul { margin: 0 0 10px; padding-left: 1.1em; }
 .compare li { margin-bottom: 2px; }
 .compare p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 128px), 1fr)); gap: 10px; max-width: 46rem; margin: 4px 0; }
+.pillars > div { border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; background: var(--surface); }
+.pillars h4 { margin: 0 0 6px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 500; color: var(--accent); }
+.pillars ul { margin: 0; padding-left: 1.05em; font-size: 0.93rem; line-height: 1.45; }
+.pillars li { margin-bottom: 3px; }
 .results { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; gap: 10px; max-width: 40rem; }
 .results li { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: 4px 16px; align-items: baseline; padding-top: 10px; border-top: 1px solid var(--rule); }
 .results strong { font-size: 1.3rem; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.2; }
