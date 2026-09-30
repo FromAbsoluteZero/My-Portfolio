@@ -48,7 +48,7 @@ That site is a blog with a page for each topic. The same shape suits you.
 ## I need from you
 
 - **Your JDIQ paper.** It is in a Claude document I could not open. Send its link, or paste the title, co-authors, year, DOI or link, status, and two or three sentences on what it found. Nothing about it is on the site yet.
-- **Your Medium article.** The site links your Medium profile. Send the article's own address and title, and I will link it directly.
+- **Summaries of your two articles.** They are linked in the Writing section by title only. I could not open Medium or Towards AI. Paste the text or the main points and I will add a line under each. Check the titles too, because I rebuilt them from the addresses.
 - Your email address, if you want it public. LinkedIn and Medium are already linked.
 - Your LinkedIn posts. I cannot read LinkedIn from this environment, and post pages need a login. Paste the text of the posts you want covered, or upload the file from LinkedIn's data export.
 - A headshot, if you want one.
