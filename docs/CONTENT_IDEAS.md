@@ -53,7 +53,6 @@ That site is a blog with a page for each topic. The same shape suits you.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
 - The start and expected end dates of your MBA, which are blank in the CV, if you want them shown.
 - Your real future plans, to replace the two suggested ones.
-- Any books beyond the first, finished or planned.
 - Interests outside work.
 - Any projects that live outside the book's repository.
 - The domain you plan to use.
