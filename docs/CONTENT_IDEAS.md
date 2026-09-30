@@ -22,7 +22,7 @@ The section at the end says how to bring the conversations in.
 
 1. **Three original projects.** Your own Appendix B says a portfolio built on the book's datasets reads as a finished tutorial. It recommends an analysis, a model evaluated honestly, and something in production, on data nobody else has picked. `reference/portfolio/project-ideas.md` has fifteen framings. This is the biggest gap on the site.
 2. **More Southern California Edison case studies.** The pipeline replacement is now on the site. The twenty-two validation checks and the glossary work each deserve their own short write-up. Use `reference/templates/README_TEMPLATE.md`: the finding first, then the decision it informs. Check with your employer before publishing anything beyond what your CV already says.
-3. **Fuller Swiggy, Grocery Outlet and Uber stories.** The Swiggy refund tool and the Grocery Outlet inventory models are on the site as short entries, written only from the lines in your CV. Add the design of the A/B test, the size and length, the metric, and how the savings were measured. Add the fraud views and the demand forecasts the same way, with only the numbers you are free to share.
+3. **Fuller Grocery Outlet, Uber and Swiggy stories.** The Swiggy cloud kitchen project is now a full case study. The Grocery Outlet entry still rests on lines from your CV. Add the fraud views, the demand forecasts and the refund tool the same way, with only the numbers you are free to share.
 4. **A page for the book.** The table of contents, a sample chapter, the cover with its credit, the errata history, and a reading path by audience from `docs/HOW_TO_USE.md`. Add reviews once you have them.
 5. **Notes.** Short posts, each built on something the repository already proves:
    - A CNN that scores below logistic regression, and still wins after a one-pixel shift (Figure 32.2).
@@ -54,8 +54,8 @@ That site is a blog with a page for each topic. The same shape suits you.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
 - The start and expected end dates of your MBA, which are blank in the CV, if you want them shown.
-- Whether the Swiggy A/B test ran on cloud kitchen orders. Your CV does not say so, and the site does not claim it.
-- Which Grocery Outlet project you mean by the performance project. The site covers all three lines from your CV.
+- **Numbers for the cloud kitchen project**, only what you can share: the change in long-distance orders, the order lift in the test group, how many kitchens opened, and the size and length of the A/B test. The case study has none yet. A redacted My Maps screenshot would let me replace the schematic with the real map.
+- **The Grocery Outlet operator performance project.** You described it as comparing each independent operator's store with others in its area and across the city, using demographics, order counts and throwaways, and scoring it on five pillars. I am holding it until you find the deck. Send the five pillars, the measures behind each and any result.
 - Your real future plans, to replace the two suggested ones.
 - Interests outside work.
 - Any projects that live outside the book's repository.
