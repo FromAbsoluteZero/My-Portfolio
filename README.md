@@ -48,13 +48,14 @@ The page loads two typefaces, Literata and IBM Plex Mono, from Google Fonts. Off
 
 Search `index.html` for `TODO` and `DRAFT`.
 
-- **Contact.** Email and LinkedIn are commented out. Add yours.
+- **Contact.** Email and LinkedIn are commented out. Add yours. Your phone number and email are not on the page on purpose.
+- **Employer review.** The Experience section repeats the results from your CV, such as percentages and dollar savings. Check them against your employer's policy before you publish. Internal project names and architecture-review findings were left out.
 - **Future projects.** The first item is documented in the book's repository. The other two are suggestions. Replace them with your real plans.
 - **Cover.** The book's cover image is not on the page. If you add it, keep the credit the artwork requires: NASA, ESA, CSA, STScI, A. Pagan (STScI), CC BY 4.0.
 
 ## Where the facts come from
 
-Every claim about the book and its code was taken from the companion repository, [FromAbsoluteZero/CodeBase](https://github.com/FromAbsoluteZero/CodeBase): `docs/AUTHOR_BIO.md`, `docs/BOOK_METADATA.md`, `docs/CHAPTER_MAP.md`, `bridges/README.md` and `practice/README.md`. Counts were checked against the files themselves, for example 34 chapters with code and 28 notebooks.
+Dates, roles and results come from your CV, which is not stored in this repository. Every claim about the book and its code was taken from the companion repository, [FromAbsoluteZero/CodeBase](https://github.com/FromAbsoluteZero/CodeBase): `docs/AUTHOR_BIO.md`, `docs/BOOK_METADATA.md`, `docs/CHAPTER_MAP.md`, `bridges/README.md` and `practice/README.md`. Counts were checked against the files themselves, for example 34 chapters with code and 28 notebooks.
 
 ## Rights
 

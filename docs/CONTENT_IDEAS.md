@@ -2,7 +2,7 @@
 
 ## What this list is based on
 
-- **Your book's repository.** Everything below comes from `FromAbsoluteZero/CodeBase`, the only source of your work that I could read.
+- **Your book's repository and your CV.** Everything below comes from `FromAbsoluteZero/CodeBase` and from `Shanmukh_Behara_CV_Updated_v3.docx`, the only sources of your work that I could read.
 - **Not your past conversations.** I cannot see earlier chats with Claude. Only the current session was available to me. Nothing here is drawn from them.
 - **tedt.org, from the files you uploaded.** The session's network policy blocked the live site, so I worked from its saved page source. I took the layout pattern only. None of its text, images or scripts is used here.
 
@@ -12,7 +12,7 @@ The section at the end says how to bring the conversations in.
 
 | Section | Source |
 |---|---|
-| About, Work | `docs/AUTHOR_BIO.md` |
+| About, Work | Your CV, and `docs/AUTHOR_BIO.md` in the book repository |
 | Book facts | `docs/BOOK_METADATA.md`, `README.md` |
 | Chapter map | `docs/CHAPTER_MAP.md`, cross-checked against `notebooks/` |
 | Portfolio and mini projects | `bridges/README.md`, `practice/README.md`, and six files under `code/`, `scripts/`, `practice/` and `tests/` |
@@ -49,7 +49,8 @@ That site is a blog with a page for each topic. The same shape suits you.
 
 - Email address and LinkedIn URL, for the contact section.
 - A headshot, if you want one.
-- Start and end years for Uber, Swiggy and Southern California Edison.
+- A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
+- The start and expected end dates of your MBA, which are blank in the CV, if you want them shown.
 - Your real future plans, to replace the two suggested ones.
 - Any books beyond the first, finished or planned.
 - Interests outside work.

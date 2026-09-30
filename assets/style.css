@@ -196,6 +196,12 @@ h3 { font-size: 1.28rem; }
 .facts dt { color: var(--muted); margin-bottom: 4px; }
 .facts dd { margin: 0; line-height: 1.5; }
 
+.block-title { margin: 36px 0 12px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 500; color: var(--muted); }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: var(--measure); }
+.edu li { display: grid; gap: 2px; }
+.edu span { color: var(--muted); }
+.block-title + .facts { margin-top: 0; padding-top: 0; border-top: 0; }
+
 /* work timeline */
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .timeline > li { position: relative; padding: 0 0 36px 28px; border-left: 1px solid var(--rule); margin-left: 5px; }
