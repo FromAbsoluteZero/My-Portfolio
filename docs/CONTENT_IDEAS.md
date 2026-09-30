@@ -47,7 +47,8 @@ That site is a blog with a page for each topic. The same shape suits you.
 
 ## I need from you
 
-- **Your JDIQ paper.** The title, co-authors, year, volume and issue, a DOI or link, whether it is published or accepted, and two or three sentences on what it found. I could not find it online, so nothing about it is on the site yet.
+- **Your JDIQ paper.** It is in a Claude document I could not open. Send its link, or paste the title, co-authors, year, DOI or link, status, and two or three sentences on what it found. Nothing about it is on the site yet.
+- **Your Medium article.** The site links your Medium profile. Send the article's own address and title, and I will link it directly.
 - Email address and LinkedIn URL, for the contact section.
 - A headshot, if you want one.
 - A decision on how much of the CV to publish. The Experience section repeats its results. Trim any your employer would not want public.
