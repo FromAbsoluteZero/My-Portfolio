@@ -36,7 +36,7 @@
       "worksFor": { "@type": "Organization", "name": "Southern California Edison" },
       "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
       "alumniOf": { "@type": "CollegeOrUniversity", "name": "California State University" },
-      "knowsAbout": ["Data governance", "Data quality", "Data validation", "Metadata management", "Business analytics", "Supply chain analytics", "Utilities", "Wildfire compliance data", "Fraud and risk analytics", "Forecasting", "A/B testing", "Python", "SQL", "Power BI"],
+      "knowsAbout": ["Data science", "Machine learning", "Data governance", "Data quality", "Data validation", "Metadata management", "Business analytics", "Supply chain analytics", "Utilities", "Wildfire compliance data", "Fraud and risk analytics", "Forecasting", "A/B testing", "Python", "SQL", "Power BI"],
       "sameAs": ["https://www.linkedin.com/in/shanmukhbehara/", "https://github.com/FromAbsoluteZero", "https://medium.com/@sbehara2"]
     },
     {
@@ -142,7 +142,7 @@
             <li>Designed and built a Python pipeline that retired a legacy orchestration layer for 4,000+ action requests a month, then rebuilt it as an Azure-native service with managed secrets, a 28-test suite and CI/CD after a formal architecture review. <a class="more" href="#sce-case">Case study</a></li>
             <li>Delivered a Palantir Foundry integration that syncs ITSM incident data from SAP HANA to SQL Server.</li>
             <li>Standardized workflow reporting for those requests, lifting SLA adherence from 78% to 89% and cutting the backlog by 31%.</li>
-            <li>Built a Power BI dashboard on automation health that improved triage time by 32%, and automated follow-ups on 60,000+ line items a month, cutting manual follow-ups by 35%.</li>
+            <li>Built a Power BI performance dashboard for the provisioning bots that cut issue triage time by 32%, and automated follow-ups on 60,000+ line items a month, cutting manual follow-ups by 35%. <a class="more" href="#bot-dashboard">Case study</a></li>
             <li>Contribute metadata and business-glossary definitions so that a shared term has one agreed meaning.</li>
           </ul>
           <p class="role"><strong>Data Analyst</strong> · Feb&nbsp;2023 – Dec&nbsp;2023</p>
@@ -184,7 +184,7 @@
         </li>
         <li class="earlier-item">
           <h3>Earlier</h3>
-          <p class="role">Business strategist on the founding team of Taksy Kraft Info Technologies, a cab-technology startup in India. <a class="more" href="#earlier">More</a></p>
+          <p class="role">Business strategist on the founding team of TaksyKraft Info Technologies, a cab-technology startup in India. <a class="more" href="#earlier">More</a></p>
         </li>
       </ol>
     </div>
@@ -221,6 +221,28 @@
           <li><strong>28</strong><span>automated tests, run in the CI/CD pipeline.</span></li>
         </ul>
         <ul class="tags"><li class="tag">Python</li><li class="tag">SQL Server</li><li class="tag">pytest</li><li class="tag">SOAP and REST APIs</li><li class="tag">Azure</li><li class="tag">Power Automate</li></ul>
+      </article>
+
+      <article class="case" id="bot-dashboard">
+        <p class="meta">Southern California Edison · Jan&nbsp;2024 – present</p>
+        <h3>A performance dashboard for the provisioning bots</h3>
+        <p class="finding">A Power BI dashboard I built tracks every exception the provisioning bots raise and sorts it by failure reason. It cut issue triage time by 32% and gives leadership a monthly view of how the automation performs.</p>
+        <dl class="case-facts">
+          <div><dt>Problem</dt><dd>The provisioning program runs more than 4,000 action requests and 60,000+ line items a month through automation. Without one view of the bots' exceptions, each failure was triaged on its own, and leadership had no regular read on automation health.</dd></div>
+          <div><dt>My role</dt><dd>I designed and built the dashboard in Power BI, set up the exception tracking and failure-reason categories behind it, and use it for the monthly performance review with leadership.</dd></div>
+        </dl>
+        <h4 class="kicker">Approach</h4>
+        <ol class="flow">
+          <li><strong>Track</strong><span>Every bot run and every exception is recorded in one place.</span></li>
+          <li><strong>Categorize</strong><span>Each exception gets a failure reason, so failures can be counted and compared.</span></li>
+          <li><strong>Report</strong><span>Leadership sees performance each month across the full request population.</span></li>
+        </ol>
+        <h4 class="kicker">Result</h4>
+        <ul class="results">
+          <li><strong>32%</strong><span>faster issue triage, from exception tracking and failure-reason categories.</span></li>
+          <li><strong>4,000+</strong><span>action requests a month in one monthly view for leadership.</span></li>
+        </ul>
+        <ul class="tags"><li class="tag">Power BI</li><li class="tag">Exception tracking</li><li class="tag">Failure-reason analysis</li><li class="tag">Automation monitoring</li><li class="tag">Root cause analysis</li></ul>
       </article>
 
       <article class="case" id="cloud-kitchens">
@@ -281,7 +303,7 @@
       <h3 class="subhead" id="earlier">Earlier work</h3>
       <div class="earlier">
         <article class="mini-case">
-          <p class="meta">Taksy Kraft Info Technologies · India</p>
+          <p class="meta">TaksyKraft Info Technologies · India</p>
           <h4>MyRyd and Cabdekho, two products for cab passengers</h4>
           <p>As business strategist on the founding team, I worked on a startup with two products. MyRyd put a tablet in the cab for entertainment, safety and guidance, paid for by location-based advertising. Cabdekho compared nearby cabs by fare, route, surge and arrival time.</p>
         </article>
@@ -312,17 +334,12 @@
         <li>
           <p class="meta">Medium · Feb&nbsp;2023</p>
           <h4><a href="https://medium.com/@sbehara2/delivering-trust-how-food-aggregators-uses-advanced-data-analysis-techniques-to-combat-fraud-7bf19d8207df">Delivering Trust: How Food Aggregators Uses Advanced Data Analysis Techniques to Combat Fraud</a></h4>
-          <p>How delivery platforms score trust: behavior, device, payment, location and order signals feed a trust score, k-means clustering groups similar users, and analysts review what gets flagged. Drawn from fraud work at Uber and Swiggy.</p>
+          <p>How delivery platforms score trust: behavior, device, payment, location and order signals feed a trust score, k-means clustering groups similar users, and analysts review what gets flagged. Drawn from fraud work at Uber and Swiggy. A shorter version, set beside how banks score credit risk, ran on LinkedIn as <a href="https://www.linkedin.com/posts/shanmukhbehara_lastmiledelivery-frauddetection-riskanalytics-ugcPost-7325580098097545216-qv-y/">Scoring Trust</a> in May&nbsp;2025.</p>
         </li>
         <li>
           <p class="meta">LinkedIn · May&nbsp;2025</p>
           <h4><a href="https://www.linkedin.com/posts/shanmukhbehara_creditrisk-behavioraldata-fintechinnovation-ugcPost-7328479973311242243-oqgI/">Credit risk as real-time behavior</a></h4>
           <p>Why ordering and ride behavior can signal trust before a lagging credit score does.</p>
-        </li>
-        <li>
-          <p class="meta">LinkedIn · May&nbsp;2025</p>
-          <h4><a href="https://www.linkedin.com/posts/shanmukhbehara_lastmiledelivery-frauddetection-riskanalytics-ugcPost-7325580098097545216-qv-y/">Scoring Trust: How Credit Risk Principles Shape Fraud Detection in Last-Mile Delivery</a></h4>
-          <p>Banks and delivery platforms score risk differently, but ask the same question: can I trust this transaction right now?</p>
         </li>
         <li>
           <p class="meta">LinkedIn · May&nbsp;2025</p>
@@ -499,11 +516,13 @@
       <h3 class="block-title">Skills</h3>
       <dl class="skills">
         <div><dt>Domains</dt><dd>Utilities, wildfire compliance data and power contracts, retail inventory and supply chain, food delivery, ride-hailing</dd></div>
-        <div><dt>Languages</dt><dd>Python, R, SQL</dd></div>
+        <div><dt>Data science</dt><dd>Regression, classification, tree ensembles, clustering and segmentation, time-series forecasting, anomaly and fraud detection, feature engineering, model evaluation</dd></div>
+        <div><dt>Statistics</dt><dd>A/B and champion-and-challenger testing, hypothesis testing, confidence intervals, root cause analysis</dd></div>
+        <div><dt>AI and LLMs</dt><dd>LLM-assisted data quality checks, prompt design, evaluating models against seeded benchmarks, running local models</dd></div>
+        <div><dt>Languages</dt><dd>Python (pandas, NumPy, scikit-learn, statsmodels), R, SQL</dd></div>
         <div><dt>Data and cloud</dt><dd>Palantir Foundry, Azure, SAP and SAP HANA, AWS (Redshift, Lambda, S3), SQL Server, PostgreSQL, Spark</dd></div>
         <div><dt>BI and reporting</dt><dd>Power BI, Tableau, SAS, MicroStrategy, Excel</dd></div>
         <div><dt>Governance</dt><dd>Metadata management, business glossary, KPI definitions, data validation, data lifecycle, Erwin DT</dd></div>
-        <div><dt>Methods</dt><dd>A/B testing, forecasting, regression, clustering, root cause analysis</dd></div>
         <div><dt>Automation</dt><dd>Power Automate, SOAP and REST APIs</dd></div>
       </dl>
     </div>
