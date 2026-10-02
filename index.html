@@ -109,7 +109,7 @@
     <ul class="work-cards">
       <li class="card" style="--c1:#7A3B12;--c2:#E08A3C">
         <svg class="art" viewBox="0 0 320 110" aria-hidden="true" focusable="false"><path class="s thin" d="M48 30H272M48 80H272"/><path class="s thin" d="M70 37V73M115 37V73M160 37V73M250 37V73"/><path class="s thin dash-s" d="M205 37V73"/><circle class="f" cx="70" cy="30" r="7"/><circle class="f" cx="115" cy="30" r="7"/><circle class="f" cx="160" cy="30" r="7"/><circle class="o" cx="205" cy="30" r="7"/><circle class="f" cx="250" cy="30" r="7"/><circle class="f2" cx="70" cy="80" r="7"/><circle class="f2" cx="115" cy="80" r="7"/><circle class="f2" cx="160" cy="80" r="7"/><circle class="s hollow" cx="205" cy="80" r="7"/><circle class="f2" cx="250" cy="80" r="7"/></svg>
-        <div class="card-body"><p class="kicker">SCE · 2024–now</p><h3><a href="#hfra-case">Fire-risk designations that match in SAP and GIS</a></h3><p>85+ functional locations and structures checked and corrected each month, so each notification carries the right regulatory deadline.</p></div>
+        <div class="card-body"><p class="kicker">SCE · 2024–now</p><h3><a href="#hfra-case">Fire-risk designations that match in SAP and GIS</a></h3><p>An automated check runs every two weeks and saves about 2 hours a report, and 85+ locations are corrected each month.</p></div>
       </li>
       <li class="card" style="--c1:#1F3A5F;--c2:#5B86C4">
         <svg class="art" viewBox="0 0 320 110" aria-hidden="true" focusable="false"><path class="s thin" d="M70 55H250"/><path class="s" d="M104 55l-10-7v14zM194 55l-10-7v14z"/><circle class="s hollow" cx="60" cy="55" r="16"/><circle class="s hollow" cx="160" cy="55" r="16"/><circle class="f" cx="260" cy="55" r="16"/><circle class="o" cx="60" cy="55" r="5"/></svg>
@@ -137,7 +137,7 @@
           <p class="role"><strong>Data Governance Advisor</strong> · Jan&nbsp;2024 – present</p>
           <ul>
             <li>Implemented 22 validation checks across SAP, Azure and Power BI, cutting monthly data defects by 42.9%.</li>
-            <li>Led the High Fire Risk Area (HFRA) designation data integrity program: resolved discrepancies between SAP and GIS records for transmission and distribution assets, and ran monthly remediation of 85+ functional locations and structures, tracking notification impacts against 6-, 12- and 36-month remediation timeframes. <a class="more" href="#hfra-case">Case study</a></li>
+            <li>Led the High Fire Risk Area (HFRA) designation data integrity program: resolved discrepancies between SAP and GIS records for transmission and distribution assets, and ran monthly remediation of 85+ functional locations and structures, tracking notification impacts against 6-, 12- and 36-month remediation timeframes, and automated the comparison so it runs hands-free every two weeks. <a class="more" href="#hfra-case">Case study</a></li>
             <li>Selected for SCE's Incident Management Team for Public Safety Power Shutoff (PSPS) events, supporting PSPS data workflows during activations.</li>
             <li>Designed and built a Python pipeline that retired a legacy orchestration layer for 4,000+ action requests a month, then rebuilt it as an Azure-native service with managed secrets, a 28-test suite and CI/CD after a formal architecture review. <a class="more" href="#sce-case">Case study</a></li>
             <li>Delivered a Palantir Foundry integration that syncs ITSM incident data from SAP HANA to SQL Server.</li>
@@ -198,24 +198,27 @@
       <article class="case" id="hfra-case">
         <p class="meta">Southern California Edison · Jan&nbsp;2024 – present</p>
         <h3>Fire-risk designations that match in SAP and GIS</h3>
-        <p class="finding">I lead the program that keeps each transmission and distribution asset's High Fire Risk Area (HFRA) designation the same in SAP and in GIS. Every month 85+ functional locations and structures are checked and corrected, so each notification carries the right regulatory deadline.</p>
+        <p class="finding">I lead the program that keeps the High Fire Risk Area (HFRA) designation of each circuit and structure the same in SAP and in GIS. I replaced a manual comparison, run from one person's computer, with an automated SQL check that runs every two weeks and saves about two hours a report. Each month 85+ functional locations and structures are corrected, so every notification carries the right regulatory deadline.</p>
         <dl class="case-facts">
-          <div><dt>Problem</dt><dd>Whether a structure sits in a CPUC High Fire-Threat District tier helps set how fast a problem found on it must be fixed: within 6, 12 or 36 months under General Order&nbsp;95, Rule&nbsp;18. When SAP and the GIS map disagree about a structure's fire-risk designation, a notification can carry the wrong deadline.</dd></div>
-          <div><dt>My role</dt><dd>I lead the HFRA designation data integrity program. I investigate each discrepancy, decide the correct designation and drive the fix in both systems of record, working with three technical teams, including master data and geomatics, and program leads in five stakeholder organizations.</dd></div>
+          <div><dt>Problem</dt><dd>A circuit's HFRA designation decides how its assets are inspected and maintained and which wildfire mitigation programs apply. When SAP and the GIS map disagree, a circuit can miss the attention it needs, and a notification can carry the wrong deadline. Whether a structure sits in a CPUC High Fire-Threat District tier helps set that deadline: 6, 12 or 36 months under General Order&nbsp;95, Rule&nbsp;18. The old check linked several Excel files by hand and ran from one person's computer.</dd></div>
+          <div><dt>My role</dt><dd>I lead the HFRA designation data integrity program and built its automated check. I investigate each discrepancy, decide the correct designation and drive the fix in both systems of record, working with three technical teams, including master data and geomatics, and program leads in five stakeholder organizations.</dd></div>
         </dl>
         <h4 class="kicker">Approach</h4>
-        <ol class="flow">
-          <li><strong>Compare</strong><span>Check each asset's designation in SAP against the GIS map and list every mismatch.</span></li>
-          <li><strong>Correct</strong><span>Decide the right designation and drive the fix in both systems with the master data and geomatics teams.</span></li>
-          <li><strong>Track</strong><span>Follow how each change moves notification deadlines, and report it to the wildfire and transmission program leads.</span></li>
+        <ol class="steps">
+          <li><div><strong>Compare</strong><span>SQL validation compares each circuit's HFRA designation in SAP with the GIS map and flags every discrepancy. It replaced the Excel files linked by hand.</span></div></li>
+          <li><div><strong>Run on its own</strong><span>Input files come through an API instead of local file paths, and the job runs hands-free every two weeks, so it no longer depends on one person's computer and is easy to hand over.</span></div></li>
+          <li><div><strong>Publish</strong><span>Results go to SharePoint, where every stakeholder can open them.</span></div></li>
+          <li><div><strong>Correct</strong><span>I decide the right designation for each mismatch and drive the fix in both systems with the master data and geomatics teams, in monthly remediation cycles of 85+ functional locations and structures.</span></div></li>
+          <li><div><strong>Track</strong><span>I follow how each change moves notification deadlines and report it to the wildfire and transmission program leads.</span></div></li>
         </ol>
         <h4 class="kicker">Result</h4>
         <ul class="results">
+          <li><strong>2 hrs</strong><span>saved on every report. The check runs hands-free every two weeks, with no manual execution.</span></li>
           <li><strong>85+</strong><span>functional locations and structures remediated in each monthly cycle.</span></li>
-          <li><strong>5</strong><span>stakeholder organizations kept on one monthly cycle, with every communicated update deadline met.</span></li>
+          <li><strong>5</strong><span>stakeholder organizations kept on one cycle, with every communicated update deadline met.</span></li>
         </ul>
-        <p class="detail">I was also selected for SCE's Incident Management Team for Public Safety Power Shutoff (PSPS) events, supporting PSPS data workflows during activations.</p>
-        <ul class="tags"><li class="tag">SAP PM</li><li class="tag">GIS</li><li class="tag">Master data</li><li class="tag">Data reconciliation</li><li class="tag">Wildfire compliance</li><li class="tag">CPUC GO 95</li></ul>
+        <p class="detail">Inspectors, asset management, operations and engineering teams use the results. Accurate designations help inspection and mitigation programs reach the right circuits, which serve homes, hospitals, emergency responders and businesses. I was also selected for SCE's Incident Management Team for Public Safety Power Shutoff (PSPS) events, supporting PSPS data workflows during activations.</p>
+        <ul class="tags"><li class="tag">SQL</li><li class="tag">Process automation</li><li class="tag">SAP PM</li><li class="tag">GIS</li><li class="tag">Data reconciliation</li><li class="tag">Wildfire compliance</li></ul>
       </article>
 
       <article class="case" id="sce-case">
